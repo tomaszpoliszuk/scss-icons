@@ -1,0 +1,37 @@
+
+/*---------------------------------*
+
+			COMPATIBILITY
+			
+MAC
+	
+	safari 4.0.5+
+						ERROR:
+								safari 5 - border-radius on box-shadow
+								safari 4 - box-shadow can't be 0 0 0 x #000;
+								safari 4 & 5 - border: transparent; looks different
+	firefox 3.5+
+	opera 11+
+								opera 12 - :after & :before moved 1px left-up (maybe because of border:solid;?)
+								opera 12 - margins not set
+								opera 11,12 - border: transparent; looks different
+								opera 9.50 & 10 - border-radius OFF
+								opera 9.50 & 10 - transform: rotate(XXdeg); OFF
+								opera 9.50 & 10 - box-shadow OFF
+								
+	chrome
+	------------------------
+	
+WIN
+	ie 9+
+	ie 8 via IE9.js (selectors) + PIE.htc (border-radius)
+	ie 7 via IE9.js (selectors)
+iOS
+
+	mobilesafari 5.02+ (iOS 4.3)
+
+TODO
+	safari 1,2,3
+	mobilesafari 1,2,3,4
+
+*---------------------------------*/

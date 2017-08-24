@@ -1,0 +1,15 @@
+.#{$namespace_icons_prefix}-folder {
+	margin: ($multiply * 4em) 0 ($multiply * 2em) 0;
+	width: ($multiply * 16em);
+	height: ($multiply * 10em);
+	border-radius: ($multiply * 2em);
+	background: $main_color;
+	&::before {
+		top: ($multiply * -1em);
+		left: ($multiply * 2em);
+		width: ($multiply * 5em);
+		height: ($multiply * 3em);
+		border-radius: ($multiply * 2em);
+		background: $main_color;
+	}
+}

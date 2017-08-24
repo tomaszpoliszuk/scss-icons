@@ -1,0 +1,61 @@
+$namespace_icons_prefix:						'icon' !default;
+
+$namespace_icon_separator:						'--' !default;
+
+$namespace_icon_cog:							'cog' !default;
+$namespace_icon_cog_animate:					'animate' !default;
+
+
+.#{$namespace_icons_prefix}-#{$namespace_icon_cog} {
+	&::before {
+		top: 0;
+		left: 0;
+		width: ($multiply * 6em);
+		height: ($multiply * 6em);
+		border: ($multiply * 5em) dotted $main_color;
+		border-radius: ($multiply * 16em);
+	}
+	&::after {
+		top: ($multiply * 2em);
+		left: ($multiply * 2em);
+		width: ($multiply * 6em);
+		height: ($multiply * 6em);
+		border: ($multiply * 3em) solid $main_color;
+		border-radius: ($multiply * 16em);
+	}
+	&#{$namespace_icon_separator}alt {
+		&::after {
+			top: ($multiply * 1em);
+			left: ($multiply * 1em);
+			width: ($multiply * 8em);
+			height: ($multiply * 8em);
+		}
+	}
+	&#{$namespace_icon_separator}2 {
+		&::before {
+			width: ($multiply * 12em);
+			height: ($multiply * 12em);
+			border: ($multiply * 2em) dotted $main_color;
+		}
+		&-alt {
+			&::after {
+				top: ($multiply * 1em);
+				left: ($multiply * 1em);
+				width: ($multiply * 8em);
+				height: ($multiply * 8em);
+			}
+		}
+	}
+	&#{$namespace_icon_separator}#{$namespace_icon_cog_animate} {
+		animation: #{$namespace_icon_cog}_#{$namespace_icon_cog_animate} 5s infinite linear;
+	}
+}
+
+@keyframes #{$namespace_icon_cog}_#{$namespace_icon_cog_animate} {
+	0%   {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}

@@ -1,0 +1,44 @@
+.#{$namespace_icons_prefix}-icloud {
+	&::before {
+		top: ($multiply * 7em);
+		left: ($multiply * 3em);
+		width: ($multiply * 10em);
+		height: ($multiply * 5em);
+		background: $main_color;
+	}
+	&::after {
+		top: ($multiply * 6em);
+		left: 0;
+		width: ($multiply * 6em);
+		height: ($multiply * 6em);
+		border-radius: ($multiply * 3em);
+		background: $main_color;
+		box-shadow:
+					($multiply * 10em) ($multiply * 1em) 0 ($multiply * -1em) $main_color,
+					($multiply * 7em) ($multiply * -2em) 0 ($multiply * 1em) $main_color,
+					($multiply * 2em) ($multiply * -3em) 0 ($multiply * -1em) $main_color;
+	}
+	&-compatible {
+		margin: ($multiply * 6em) 0 ($multiply * 4em) 0;
+		width: ($multiply * 16em);
+		height: ($multiply * 6em);
+		border-radius: ($multiply * 3em);
+		background: $main_color;
+		&::before {
+			top: ($multiply * -4em);
+			left: ($multiply * 5em);
+			width: ($multiply * 8em);
+			height: ($multiply * 8em);
+			border-radius: ($multiply * 4em);
+			background: $main_color;
+		}
+		&::after {
+			top: ($multiply * -2.5em);
+			left: ($multiply * 2em);
+			width: ($multiply * 4em);
+			height: ($multiply * 4em);
+			border-radius: ($multiply * 3em);
+			background: $main_color;
+		}
+	}
+}

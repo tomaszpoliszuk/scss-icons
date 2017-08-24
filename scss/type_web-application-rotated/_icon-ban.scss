@@ -1,0 +1,20 @@
+.#{$namespace_icons_prefix}-ban {
+	&::before {
+		top: 0;
+		left: 0;
+		width: ($multiply * 12em);
+		height: ($multiply * 12em);
+		border: ($multiply * 2em) solid $main_color;
+		border-radius: ($multiply * 8em);
+		background: $transparent;
+	}
+	&::after {
+		top: ($multiply * 7em);
+		left: 0;
+		width: ($multiply * 16em);
+		height: ($multiply * 2em);
+		border-radius: ($multiply * 2em);
+		background: $main_color;
+		transform: rotate(-45deg);
+	}
+}

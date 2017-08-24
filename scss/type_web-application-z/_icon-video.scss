@@ -1,0 +1,16 @@
+.#{$namespace_icons_prefix}-video {
+	margin: ($multiply * 3em) ($multiply * 5em) ($multiply * 3em) 0;
+	width: ($multiply * 11em);
+	height: ($multiply * 10em);
+	border-radius: ($multiply * 1em);
+	background: $main_color;
+	&::before {
+		top: 0;
+		left: ($multiply * 9em);
+		width: 0;
+		height: 0;
+		border-top: ($multiply * 5em) solid $transparent;
+		border-right: ($multiply * 7em) solid $main_color;
+		border-bottom: ($multiply * 5em) solid $transparent;
+	}
+}

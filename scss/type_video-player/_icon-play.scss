@@ -1,0 +1,11 @@
+.#{$namespace_icons_prefix}-play {
+	&::before {
+		left: ($multiply * 4em);
+		top: ($multiply * 3em);
+		width: 0;
+		height: 0;
+		border-top: ($multiply * 5em) solid $transparent;
+		border-left: ($multiply * 9em) solid $main_color;
+		border-bottom: ($multiply * 5em) solid $transparent;
+	}
+}

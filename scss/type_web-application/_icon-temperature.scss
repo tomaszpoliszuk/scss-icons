@@ -1,0 +1,18 @@
+.#{$namespace_icons_prefix}-temperature {
+	&::before {
+		top: 0;
+		left: ($multiply * 6em);
+		width: ($multiply * 2em);
+		height: ($multiply * 10em);
+		border: ($multiply * 1em) solid $main_color;
+		border-radius: ($multiply * 2em);
+	}
+	&::after {
+		top: ($multiply * 10em);
+		left: ($multiply * 5em);
+		width: ($multiply * 6em);
+		height: ($multiply * 6em);
+		border-radius: ($multiply * 3em);
+		background: $main_color;
+	}
+}

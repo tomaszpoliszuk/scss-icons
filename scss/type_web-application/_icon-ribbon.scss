@@ -1,0 +1,20 @@
+.#{$namespace_icons_prefix}-ribbon {
+	&::before {
+		top: 0;
+		left: ($multiply * 5em);
+		width: ($multiply * 6em);
+		height: ($multiply * 12em);
+		border-radius: ($multiply * 1em);
+		background: $main_color;
+	}
+	&::after {
+		left: ($multiply * 5em);
+		top: ($multiply * 9em);
+		width: 0;
+		height: 0;
+		border-radius: ($multiply * 1em) 0 0;
+		border-style: solid;
+		border-color: $transparent $main_color $transparent $main_color;
+		border-width: ($multiply * 3em) ($multiply * 3em) ($multiply * 4em) ($multiply * 3em);
+	}
+}

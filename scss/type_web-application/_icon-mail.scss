@@ -1,0 +1,34 @@
+.#{$namespace_icons_prefix}-mail {
+	&::before {
+		top: ($multiply * 3em);
+		left: 0;
+		width: ($multiply * 14em);
+		height: ($multiply * 8em);
+		border-width: ($multiply * 1em);
+		border-style: solid;
+		border-color: $main_color;
+		border-radius: ($multiply * 2em);
+	}
+	&::after {
+		top: ($multiply * 4em);
+		left: ($multiply * 1em);
+		width: 0;
+		height: 0;
+		background: none;
+		border-left: ($multiply * 7em) solid $transparent;
+		border-right: ($multiply * 7em) solid $transparent;
+		border-top: ($multiply * 4em) solid $main_color;
+	}
+	&-alt {
+		&::before {
+			width: 0;
+			height: 0;
+			border-width: ($multiply * 5em) ($multiply * 8em);
+			border-color: $transparent $main_color $main_color $main_color;
+			border-radius: 0 0 ($multiply * 1em) ($multiply * 1em);
+		}
+		&::after {
+			top: ($multiply * 2em);
+		}
+	}
+}

@@ -1,0 +1,18 @@
+.#{$namespace_icons_prefix}-clock {
+	&::after {
+		top: ($multiply * 2em);
+		left: ($multiply * 5em);
+		width: ($multiply * 3em);
+		height: ($multiply * 4em);
+		border-left: ($multiply * 1em) solid $main_color;
+		border-bottom: ($multiply * 1em) solid $main_color;
+	}
+	&-alt {
+		&::after {
+			top: ($multiply * 4em);
+			left: ($multiply * 7em);
+			border-left-color: $secondary_color;
+			border-bottom-color: $secondary_color;
+		}
+	}
+}

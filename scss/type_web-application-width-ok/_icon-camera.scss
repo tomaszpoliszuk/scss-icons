@@ -1,0 +1,26 @@
+.#{$namespace_icons_prefix}-camera {
+	margin: ($multiply * 4em) 0 ($multiply * 2em) 0;
+	width: ($multiply * 16em);
+	height: ($multiply * 10em);
+	border-radius: ($multiply * 2em);
+	background: $main_color;
+	&::before {
+		top: ($multiply * 1em);
+		left: ($multiply * 4em);
+		width: ($multiply * 4em);
+		height: ($multiply * 4em);
+		border: ($multiply * 2em) solid $secondary_color;
+		border-radius: ($multiply * 6em);
+		background: $main_color;
+	}
+	&::after {
+		top: ($multiply * -1em);
+		left: ($multiply * 2em);
+		width: ($multiply * 4em);
+		height: ($multiply * 3em);
+		border-radius: ($multiply * 2em);
+		background: $main_color;
+		box-shadow:
+		($multiply * 9em) ($multiply * 1em) 0 ($multiply * -1em) $secondary_color;
+	}
+}

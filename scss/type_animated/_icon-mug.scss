@@ -1,0 +1,95 @@
+$namespace_icons_prefix:						'icon' !default;
+
+$namespace_icon_separator:						'--' !default;
+
+$namespace_icon_mug:							'mug' !default;
+$namespace_icon_mug_min:						'min' !default;
+$namespace_icon_mug_half:						'half' !default;
+$namespace_icon_mug_max:						'max' !default;
+$namespace_icon_mug_full:						'full' !default;
+$namespace_icon_mug_animate:					'animate' !default;
+$namespace_icon_mug_animate_alt:				'animate_alt' !default;
+$namespace_icon_mug_active:						'active' !default;
+$namespace_icon_mug_inactive:					'inactive' !default;
+
+.#{$namespace_icons_prefix}-#{$namespace_icon_mug} {
+	margin: 0 ($multiply * 4em) 0 0;
+	width: ($multiply * 10em);
+	height: ($multiply * 14em);
+	border: ($multiply * 1em) solid $main_color;
+	border-radius: 0 0 ($multiply * 2em) ($multiply * 2em);
+	&::before {
+		top: ($multiply * 1em);
+		left: ($multiply * 10em);
+		width: ($multiply * 4em);
+		height: ($multiply * 7em);
+		border: ($multiply * 1em) solid $main_color;
+		border-left: 0;
+		border-radius: ($multiply * 4em);
+	}
+	&::after {
+		bottom: 0;
+		width: ($multiply * 10em);
+		height: 0;
+		background: $main_color;
+	}
+	&#{$namespace_icon_separator}#{$namespace_icon_mug_min} {
+		&::after {
+			height: ($multiply * 2em);
+		}
+	}
+	&#{$namespace_icon_separator}#{$namespace_icon_mug_half} {
+		&::after {
+			height: ($multiply * 7em);
+		}
+	}
+	&#{$namespace_icon_separator}#{$namespace_icon_mug_max} {
+		&::after {
+			height: ($multiply * 12em);
+		}
+	}
+	&#{$namespace_icon_separator}#{$namespace_icon_mug_full} {
+		&::after {
+			height: ($multiply * 14em);
+		}
+	}
+	&#{$namespace_icon_separator}#{$namespace_icon_mug_animate} {
+		&::after {
+			animation: #{$namespace_icon_mug}_#{$namespace_icon_mug_animate} 5s infinite steps(10);
+		}
+	}
+	&#{$namespace_icon_separator}#{$namespace_icon_mug_animate_alt} {
+		&::after {
+			animation: #{$namespace_icon_mug}_#{$namespace_icon_mug_animate_alt} 5s infinite steps(10);
+		}
+	}
+	&#{$namespace_icon_separator}#{$namespace_icon_mug_active} {
+		&::after {
+			background: $good_color;
+		}
+	}
+	&#{$namespace_icon_separator}#{$namespace_icon_mug_inactive} {
+		&::after {
+			background: $bad_color;
+		}
+	}
+}
+
+
+@keyframes #{$namespace_icon_mug}_#{$namespace_icon_mug_animate} {
+	0%   {
+		height: 0;
+	}
+	100% {
+		height: ($multiply * 14em);
+	}
+}
+
+@keyframes #{$namespace_icon_mug}_#{$namespace_icon_mug_animate_alt} {
+	0%   {
+		height: ($multiply * 14em);
+	}
+	100% {
+		height: 0;
+	}
+}

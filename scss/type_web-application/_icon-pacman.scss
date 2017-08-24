@@ -1,0 +1,22 @@
+$namespace_icons_prefix:						'icon' !default;
+
+$namespace_icon_separator:						'--' !default;
+
+$namespace_icon_pacman:							'pacman' !default;
+
+
+.#{$namespace_icons_prefix}-#{$namespace_icon_pacman} {
+	width: 0;
+	height: 0;
+	border: ($multiply * 8em) solid $main_color;
+	border-right: ($multiply * 8em) solid $transparent;
+	border-radius: ($multiply * 8em);
+	&::before {
+		top: ($multiply * -5em);
+		left: ($multiply * -2em);
+		width: ($multiply * 2em);
+		height: ($multiply * 2em);
+		border-radius: ($multiply * 8em);
+		background: $secondary_color;
+	}
+}

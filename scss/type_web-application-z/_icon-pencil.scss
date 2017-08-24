@@ -1,0 +1,24 @@
+.#{$namespace_icons_prefix}-pencil {
+	margin: ($multiply * 2em) ($multiply * 0.385em) ($multiply * 2em) ($multiply * 0.385em);
+	width: ($multiply * 4em);
+	height: ($multiply * 12em);
+	background: $main_color;
+	transform: rotate(45deg);
+	&::before {
+		top: ($multiply * 13em);
+		left: 0;
+		width: 0;
+		height: 0;
+		border-top: ($multiply * 4em) solid $main_color;
+		border-left: ($multiply * 2em) solid $transparent;
+		border-right: ($multiply * 2em) solid $transparent;
+	}
+	&::after {
+		top: ($multiply * -4em);
+		left: 0;
+		width: ($multiply * 4em);
+		height: ($multiply * 3em);
+		border-radius: ($multiply * 1em) ($multiply * 1em) 0 0;
+		background: $main_color;
+	}
+}

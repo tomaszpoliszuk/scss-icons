@@ -1,0 +1,38 @@
+.#{$namespace_icons_prefix}-align {
+	&::before,
+	&::after {
+		left: 0;
+		height: ($multiply * 2em);
+		border-radius: ($multiply * 2em);
+		background: $main_color;
+		box-shadow:
+					0 ($multiply * 8em) 0 $main_color;
+	}
+	&::before {
+		top: ($multiply * 1em);
+		width: ($multiply * 12em);
+	}
+	&::after {
+		top: ($multiply * 5em);
+		width: ($multiply * 16em);
+	}
+	&-left {
+	}
+	&-right {
+		&::before {
+			left: ($multiply * 4em);
+		}
+	}
+	&-center {
+		&::before {
+			left: ($multiply * 2em);
+		}
+	}
+	&-justify {
+		&::before {
+			width: ($multiply * 16em);
+		}
+	}
+}
+
+

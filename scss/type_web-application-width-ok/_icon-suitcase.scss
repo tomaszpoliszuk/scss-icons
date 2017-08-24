@@ -1,0 +1,52 @@
+$namespace_icons_prefix:						'icon' !default;
+
+$namespace_icon_separator:						'--' !default;
+
+$namespace_icon_suitcase:						'suitcase' !default;
+$namespace_icon_suitcase_animate:				'animate' !default;
+
+
+.#{$namespace_icons_prefix}-#{$namespace_icon_suitcase} {
+	margin: ($multiply * 4em) 0 ($multiply * 2em) 0;
+	width: ($multiply * 12em);
+	height: ($multiply * 10em);
+	border-left: ($multiply * 2em) solid $main_color;
+	border-right: ($multiply * 2em) solid $main_color;
+	border-radius: ($multiply * 1em);
+	&::before {
+		left: ($multiply * 1em);
+		width: ($multiply * 10em);
+		height: ($multiply * 10em);
+		background: $main_color;
+	}
+	&::after {
+		top: ($multiply * -2em);
+		left: ($multiply * 3em);
+		width: ($multiply * 4em);
+		height: ($multiply * 2em);
+		border: ($multiply * 1em) solid $main_color;
+		border-bottom: 0;
+		border-radius: ($multiply * 2em);
+	}
+	&#{$namespace_icon_separator}alt {
+		width: ($multiply * 10em);
+		border-left: ($multiply * 3em) solid $main_color;
+		border-right: ($multiply * 3em) solid $main_color;
+		&::before {
+			width: ($multiply * 8em);
+		}
+		&::after {
+			left: ($multiply * 2em);
+		}
+	}
+	&#{$namespace_icon_separator}medic {
+		height: 1.5em;
+		border: ($multiply * 2em) solid $main_color;
+		&::before {
+			background: $transparent;
+		}
+		&::after {
+			top: ($multiply * -4em);
+		}
+	}
+}

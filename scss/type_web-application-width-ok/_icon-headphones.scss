@@ -1,0 +1,25 @@
+.#{$namespace_icons_prefix}-headphones {
+	margin: 0 0 ($multiply * 3em) 0;
+	width: ($multiply * 12em);
+	height: ($multiply * 11em);
+	border-style: solid;
+	border-width: ($multiply * 2em) ($multiply * 2em) 0 ($multiply * 2em);
+	border-color: $main_color;
+	border-radius: ($multiply * 16em) ($multiply * 16em) 0 0;
+	&::before {
+		top: ($multiply * 7em);
+		left: ($multiply * 1em);
+		width: ($multiply * 3em);
+		height: ($multiply * 7em);
+		border-radius: ($multiply * 2em);
+		background: $main_color;
+	}
+	&::after {
+		top: ($multiply * 7em);
+		left: ($multiply * 8em);
+		width: ($multiply * 3em);
+		height: ($multiply * 7em);
+		border-radius: ($multiply * 2em);
+		background: $main_color;
+	}
+}

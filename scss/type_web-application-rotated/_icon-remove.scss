@@ -1,0 +1,18 @@
+.#{$namespace_icons_prefix}-remove {
+	&::before {
+		top: ($multiply * -1em);
+		left: ($multiply * 6em);
+		width: ($multiply * 4em);
+		height: ($multiply * 18em);
+		background: $main_color;
+		transform: rotate(45deg);
+	}
+	&::after {
+		top: ($multiply * -1em);
+		left: ($multiply * 6em);
+		width: ($multiply * 4em);
+		height: ($multiply * 18em);
+		background: $main_color;
+		transform: rotate(-45deg);
+	}
+}

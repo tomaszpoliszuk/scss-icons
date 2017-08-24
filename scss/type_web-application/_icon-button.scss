@@ -1,0 +1,24 @@
+.#{$namespace_icons_prefix}-button {
+	&::after {
+		top: ($multiply * 3em);
+		left: ($multiply * 5em);
+		width: ($multiply * 2em);
+		height: ($multiply * 2em);
+		border-radius: ($multiply * 2em);
+		box-shadow:
+		($multiply * -2em) 0 0 $main_color,
+		($multiply * 2em) 0 0 $main_color,
+		($multiply * -2em) ($multiply * 4em) 0 $main_color,
+		($multiply * 2em) ($multiply * 4em) 0 $main_color;
+	}
+	&-alt {
+		&::after {
+			top: ($multiply * 2em);
+			background: $main_color;
+			box-shadow:
+			($multiply * -3em) ($multiply * 3em) 0 $main_color,
+			0 ($multiply * 6em) 0 $main_color,
+			($multiply * 3em) ($multiply * 3em) 0 $main_color;
+		}
+	}
+}

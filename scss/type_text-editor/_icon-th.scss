@@ -1,0 +1,57 @@
+.#{$namespace_icons_prefix}-th {
+	&::before {
+		top: ($multiply * 1em);
+		left: 0;
+		width: ($multiply * 4em);
+		height: ($multiply * 3em);
+		border-radius: ($multiply * 10em);
+		background: $main_color;
+		box-shadow:
+				($multiply * 6em) 0 0 $main_color,
+				($multiply * 12em) 0 0 $main_color,
+				0 ($multiply * 5em) 0 $main_color,
+				($multiply * 6em) ($multiply * 5em) 0 $main_color,
+				($multiply * 12em) ($multiply * 5em) 0 $main_color,
+				0 ($multiply * 10em) 0 $main_color,
+				($multiply * 6em) ($multiply * 10em) 0 $main_color,
+				($multiply * 12em) ($multiply * 10em) 0 $main_color;
+	}
+	&-large {
+		&::before {
+			top: ($multiply * 1em);
+			left: 0;
+			width: ($multiply * 7em);
+			height: ($multiply * 6em);
+			border-radius: ($multiply * 1em);
+			background: $main_color;
+			box-shadow:
+					0 ($multiply * 8em) 0 $main_color,
+					($multiply * 9em) 0 0 $main_color,
+					($multiply * 9em) ($multiply * 8em) 0 $main_color;
+		}
+	}
+	&-list {
+		&::before {
+			top: ($multiply * 1em);
+			left: 0;
+			width: ($multiply * 4em);
+			height: ($multiply * 3em);
+			border-radius: ($multiply * 2em);
+			background: $main_color;
+			box-shadow:
+					0 ($multiply * 5em) 0 $main_color,
+					0 ($multiply * 10em) 0 $main_color;
+		}
+		&::after {
+			top: ($multiply * 1em);
+			left: ($multiply * 6em);
+			width: ($multiply * 10em);
+			height: ($multiply * 3em);
+			border-radius: ($multiply * 21em);
+			background: $main_color;
+			box-shadow:
+					0 ($multiply * 5em) 0 $main_color,
+					0 ($multiply * 10em) 0 $main_color;
+		}
+	}
+}

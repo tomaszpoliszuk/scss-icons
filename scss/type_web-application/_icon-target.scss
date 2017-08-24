@@ -1,0 +1,18 @@
+.#{$namespace_icons_prefix}-target {
+	&::before {
+		top: 0;
+		left: 0;
+		width: ($multiply * 6em);
+		height: ($multiply * 6em);
+		border: ($multiply * 5em) double $main_color;
+		border-radius: ($multiply * 16em);
+	}
+	&::after {
+		top: ($multiply * 6em);
+		left: ($multiply * 6em);
+		width: ($multiply * 4em);
+		height: ($multiply * 4em);
+		border-radius: ($multiply * 2em);
+		background: $main_color;
+	}
+}

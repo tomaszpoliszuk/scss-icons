@@ -1,0 +1,37 @@
+.#{$namespace_icons_prefix}-chevron {
+	&::before {
+		top: ($multiply * 4em);
+		left: ($multiply * 2em);
+		width: ($multiply * 8em);
+		height: ($multiply * 8em);
+		border-left: ($multiply * 4em) solid $main_color;
+		border-bottom: ($multiply * 4em) solid $main_color;
+		background: $transparent;
+		transform: rotate(135deg);
+		transform-origin: 50% 50%;
+	}
+	&-left {
+		transform: rotate(-90deg);
+	}
+	&-up {
+		transform: rotate(0);
+		&-left {
+			transform: rotate(-45deg);
+		}
+		&-right {
+			transform: rotate(45deg);
+		}
+	}
+	&-right {
+		transform: rotate(90deg);
+	}
+	&-down {
+		transform: rotate(180deg);
+		&-left {
+			transform: rotate(-135deg);
+		}
+		&-right {
+			transform: rotate(135deg);
+		}
+	}
+}

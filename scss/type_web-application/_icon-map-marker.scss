@@ -1,0 +1,19 @@
+.#{$namespace_icons_prefix}-map-marker {
+	&::before {
+		top: 0;
+		left: ($multiply * 3em);
+		width: ($multiply * 4em);
+		height: ($multiply * 4em);
+		border: ($multiply * 3em) solid $main_color;
+		border-radius: ($multiply * 6em);
+	}
+	&::after {
+		left: ($multiply * 4em);
+		top: ($multiply * 7em);
+		width: 0;
+		height: 0;
+		border-top: ($multiply * 9em) solid $main_color;
+		border-left: ($multiply * 4em) solid $transparent;
+		border-right: ($multiply * 4em) solid $transparent;
+	}
+}

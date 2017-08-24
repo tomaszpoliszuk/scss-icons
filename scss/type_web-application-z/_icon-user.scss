@@ -1,0 +1,15 @@
+.#{$namespace_icons_prefix}-user {
+	margin: ($multiply * 9em) ($multiply * 1em) 0 ($multiply * 1em);
+	width: ($multiply * 14em);
+	height: ($multiply * 7em);
+	border-radius: ($multiply * 12em) ($multiply * 12em) ($multiply * 3em) ($multiply * 3em);
+	background: $main_color;
+	&::before {
+		top: ($multiply * -9em);
+		left: ($multiply * 3em);
+		width: ($multiply * 8em);
+		height: ($multiply * 8em);
+		border-radius: ($multiply * 4em);
+		background: $main_color;
+	}
+}

@@ -1,0 +1,10 @@
+.#{$namespace_icons_prefix}-egg {
+	&::before {
+		left: ($multiply * 2em);
+		width: ($multiply * 12em);
+		height: ($multiply * 16em);
+		background: $main_color;
+		border-radius: ($multiply * 40em) ($multiply * 40em) ($multiply * 40em) ($multiply * 40em) / ($multiply * 70em) ($multiply * 70em) ($multiply * 40em) ($multiply * 40em);
+		border-radius: 40em 40em 40em 40em / 70em 70em 40em 40em;
+	}
+}

@@ -1,0 +1,85 @@
+.#{$namespace_icons_prefix}-dice {
+	&::before {
+	}
+	&-1 {
+		&::before {
+			top: ($multiply * 5em);
+			left: ($multiply * 5em);
+			width: ($multiply * 2em);
+			height: ($multiply * 2em);
+			border-radius: ($multiply * 2em);
+			background: $main_color;
+			box-shadow: none;
+		}
+	}
+	&-2 {
+		&::before {
+			top: ($multiply * 5em);
+			left: ($multiply * 5em);
+			width: ($multiply * 2em);
+			height: ($multiply * 2em);
+			border-radius: ($multiply * 2em);
+			box-shadow:
+			($multiply * -2em) ($multiply * -2em) 0 $main_color,
+			($multiply * 2em) ($multiply * 2em) 0 $main_color;
+		}
+	}
+	&-3 {
+		&::before {
+			top: ($multiply * 5em);
+			left: ($multiply * 5em);
+			width: ($multiply * 2em);
+			height: ($multiply * 2em);
+			border-radius: ($multiply * 2em);
+			background: $main_color;
+			box-shadow:
+			($multiply * -4em) ($multiply * -4em) 0 $main_color,
+			($multiply * 4em) ($multiply * 4em) 0 $main_color;
+		}
+	}
+	&-4 {
+		&::before {
+			top: ($multiply * 0.15em);
+			left: ($multiply * 4em);
+			width: ($multiply * 2em);
+			height: ($multiply * 2em);
+			border-radius: ($multiply * 2em);
+			box-shadow:
+			($multiply * -2em) 0 0 $main_color,
+			($multiply * 4em) 0 0 $main_color,
+			($multiply * -2em) ($multiply * 0.365em) 0 $main_color,
+			($multiply * 4em) ($multiply * 0.365em) 0 $main_color;
+		}
+	}
+	&-5 {
+		&::before {
+			top: ($multiply * 5em);
+			left: ($multiply * 5em);
+			width: ($multiply * 2em);
+			height: ($multiply * 2em);
+			border-radius: ($multiply * 2em);
+			background: $main_color;
+			box-shadow:
+			($multiply * -4em) ($multiply * -4em) 0 $main_color,
+			($multiply * 4em) ($multiply * 4em) 0 $main_color,
+			($multiply * -4em) ($multiply * 4em) 0 $main_color,
+			($multiply * 4em) ($multiply * -4em) 0 $main_color;
+		}
+	}
+	&-6 {
+		&::before {
+			top: ($multiply * 0.15em);
+			left: ($multiply * 4em);
+			width: ($multiply * 2em);
+			height: ($multiply * 2em);
+			border-radius: ($multiply * 2em);
+			box-shadow:
+			($multiply * -2em) ($multiply * -0.16em) 0 $main_color,
+			($multiply * 4em) ($multiply * -0.16em) 0 $main_color,
+			($multiply * -2em) ($multiply * 0.16em) 0 0 $main_color,
+			($multiply * 4em) ($multiply * 0.16em) 0 0 $main_color,
+			($multiply * -2em) ($multiply * 0.4em) 0 $main_color,
+			($multiply * 4em) ($multiply * 0.4em) 0 $main_color;
+		}
+	}
+}

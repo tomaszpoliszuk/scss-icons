@@ -1,0 +1,19 @@
+.#{$namespace_icons_prefix}-window {
+	margin: ($multiply * 2em) 0;
+	width: ($multiply * 12em);
+	height: ($multiply * 7em);
+	border: ($multiply * 2em) solid $main_color;
+	border-top-width: ($multiply * 3em);
+	border-radius: ($multiply * 2em);
+	&::before {
+		top: ($multiply * -2em);
+		left: 0;
+		width: ($multiply * 1em);
+		height: ($multiply * 1em);
+		border-radius: ($multiply * 2em);
+		background: $secondary_color;
+		box-shadow:
+					($multiply * 2em) 0 0 $secondary_color,
+					($multiply * 4em) 0 0 $secondary_color;
+	}
+}

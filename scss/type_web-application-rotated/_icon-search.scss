@@ -1,0 +1,20 @@
+.#{$namespace_icons_prefix}-search {
+	&::before {
+		top: 0;
+		left: 0;
+		width: ($multiply * 9em);
+		height: ($multiply * 9em);
+		border: ($multiply * 2em) solid $main_color;
+		border-radius: ($multiply * 8em);
+		background: $transparent;
+	}
+	&::after {
+		top: ($multiply * 12em);
+		left: ($multiply * 9em);
+		width: ($multiply * 8em);
+		height: ($multiply * 2em);
+		border-radius: ($multiply * 1em);
+		background: $main_color;
+		transform: rotate(45deg);
+	}
+}

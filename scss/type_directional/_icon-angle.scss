@@ -1,0 +1,77 @@
+.#{$namespace_icons_prefix}-angle {
+	&::before {
+		top: ($multiply * 6em);
+		left: ($multiply * 3em);
+		width: ($multiply * 8em);
+		height: ($multiply * 8em);
+		border-left: ($multiply * 2em) solid $main_color;
+		border-bottom: ($multiply * 2em) solid $main_color;
+		background: $transparent;
+		transform: rotate(135deg);
+		transform-origin: 50% 50%;
+	}
+	&-left {
+		transform: rotate(-90deg);
+	}
+	&-up {
+		transform: rotate(0);
+		&-left {
+			transform: rotate(-45deg);
+		}
+		&-right {
+			transform: rotate(45deg);
+		}
+	}
+	&-right {
+		transform: rotate(90deg);
+	}
+	&-down {
+		transform: rotate(180deg);
+		&-left {
+			transform: rotate(-135deg);
+		}
+		&-right {
+			transform: rotate(135deg);
+		}
+	}
+	&-double {
+		&::before {
+			top: ($multiply * 3em);
+			left: ($multiply * 3em);
+		}
+		&::after {
+			top: ($multiply * 8em);
+			left: ($multiply * 3em);
+			width: ($multiply * 8em);
+			height: ($multiply * 8em);
+			border-left: ($multiply * 2em) solid $main_color;
+			border-bottom: ($multiply * 2em) solid $main_color;
+			background: $transparent;
+			transform: rotate(135deg);
+		}
+		&-left {
+			transform: rotate(-90deg);
+		}
+		&-up {
+			transform: rotate(0);
+			&-left {
+				transform: rotate(-45deg);
+			}
+			&-right {
+				transform: rotate(45deg);
+			}
+		}
+		&-right {
+			transform: rotate(90deg);
+		}
+		&-down {
+			transform: rotate(180deg);
+			&-left {
+				transform: rotate(-135deg);
+			}
+			&-right {
+				transform: rotate(135deg);
+			}
+		}
+	}
+}

@@ -1,0 +1,26 @@
+.#{$namespace_icons_prefix}-mic {
+	margin: 0 ($multiply * 5em) ($multiply * 5em) ($multiply * 5em);
+	width: ($multiply * 6em);
+	height: ($multiply * 11em);
+	border-radius: ($multiply * 3em);
+	background: $main_color;
+	&::before {
+		top: ($multiply * 5em);
+		left: ($multiply * -2em);
+		width: ($multiply * 8em);
+		height: ($multiply * 7em);
+		border-style: solid;
+		border-width: 0 ($multiply * 1em) ($multiply * 1em) ($multiply * 1em);
+		border-color: $main_color;
+		border-radius: 0 0 ($multiply * 16em) ($multiply * 16em);
+	}
+	&::after {
+		left: 0;
+		top: ($multiply * 12em);
+		width: 0;
+		height: 0;
+		border-right: ($multiply * 3em) solid $transparent;
+		border-left: ($multiply * 3em) solid $transparent;
+		border-bottom: ($multiply * 4em) solid $main_color;
+	}
+}

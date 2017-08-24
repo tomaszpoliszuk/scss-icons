@@ -1,0 +1,30 @@
+.#{$namespace_icons_prefix}-polybag {
+	margin: ($multiply * 4em) 0 ($multiply * 5em) 0;
+	width: ($multiply * 16em);
+	height: ($multiply * 7em);
+	background: $main_color;
+	&::before {
+		top: ($multiply * 8em);
+		width: ($multiply * 16em);
+		height: ($multiply * 2em);
+		background: $main_color;
+		border-radius: 0 0 ($multiply * 2em) ($multiply * 2em);
+	}
+	&::after {
+		top: ($multiply * -2em);
+		left: ($multiply * 5em);
+		width: ($multiply * 4em);
+		height: ($multiply * 2em);
+		border: ($multiply * 1em) solid $main_color;
+		border-bottom: 0;
+		border-radius: ($multiply * 2em);
+	}
+	&-alt {
+		margin: ($multiply * 4em) 0 ($multiply * 6em) 0;
+		height: ($multiply * 6em);
+		&::before {
+			top: ($multiply * 7em);
+			height: ($multiply * 3em);
+		}
+	}
+}

@@ -1,0 +1,44 @@
+.#{$namespace_icons_prefix}-volume {
+	margin: ($multiply * 5em) ($multiply * 7em) ($multiply * 5em) ($multiply * 1em);
+	width: ($multiply * 8em);
+	height: ($multiply * 6em);
+	border-radius: ($multiply * 1em);
+	background: $main_color;
+	&::before {
+		margin-right: ($multiply * 10em);
+		top: ($multiply * -3em);
+		left: 0;
+		width: 0;
+		height: 0;
+		border-top:  ($multiply * 6em) solid $transparent;
+		border-right: ($multiply * 9em) solid $main_color;
+		border-bottom: ($multiply * 6em) solid $transparent;
+	}
+	&-min,
+	&-max {
+		&::after {
+			left: ($multiply * 10em);
+			width: ($multiply * 2em);
+			border-color: $main_color;
+			border-top-right-radius: ($multiply * 16em);
+		}
+	}
+	&-min {
+		&::after {
+			top: ($multiply * 1em);
+			height: ($multiply * 3em);
+			border-style: solid;
+			border-width: ($multiply * 1em) ($multiply * 1em) 0 0;
+			transform: rotate(33deg);
+		}
+	}
+	&-max {
+		&::after {
+			top: 0;
+			height: ($multiply * 2em);
+			border-style: double;
+			border-width: ($multiply * 4em) ($multiply * 4em) 0 0;
+			transform: rotate(45deg);
+		}
+	}
+}

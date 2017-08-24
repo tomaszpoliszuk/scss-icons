@@ -1,0 +1,24 @@
+.#{$namespace_icons_prefix}-briefcase {
+	margin: ($multiply * 4em) 0 ($multiply * 8em) 0;
+	width: ($multiply * 16em);
+	height: ($multiply * 4em);
+	background: $main_color;
+	border-radius: ($multiply * 2em) ($multiply * 2em) 0 0;
+	&::before {
+		top: ($multiply * 5em);
+		width: ($multiply * 16em);
+		height: ($multiply * 5em);
+		border-radius: 0 0 ($multiply * 2em) ($multiply * 2em);
+		border-radius: 0 0 ($multiply * 2em) ($multiply * 2em);
+		background: $main_color;
+	}
+	&::after {
+		top: ($multiply * -2em);
+		left: ($multiply * 5em);
+		width: ($multiply * 4em);
+		height: ($multiply * 2em);
+		border: ($multiply * 1em) solid $main_color;
+		border-bottom: 0;
+		border-radius: ($multiply * 2em);
+	}
+}

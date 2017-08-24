@@ -1,0 +1,20 @@
+.#{$namespace_icons_prefix}-screens {
+	&::before {
+		top: ($multiply * 2em);
+		left: ($multiply * 3em);
+		width: ($multiply * 11em);
+		height: ($multiply * 7em);
+		border: ($multiply * 1em) solid $main_color;
+		border-radius: ($multiply * 2em);
+		background: $secondary_color;
+	}
+	&::after {
+		top: ($multiply * 5em);
+		left: 0;
+		width: ($multiply * 11em);
+		height: ($multiply * 7em);
+		border: ($multiply * 1em) solid $main_color;
+		border-radius: ($multiply * 2em);
+		background: $secondary_color;
+	}
+}

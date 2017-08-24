@@ -1,0 +1,43 @@
+$namespace_icons_prefix:						'icon' !default;
+
+$namespace_icon_separator:						'--' !default;
+
+$namespace_icon_heart:							'heart' !default;
+$namespace_icon_heart_animate:					'animate' !default;
+
+
+.#{$namespace_icons_prefix}-#{$namespace_icon_heart} {
+	&::before {
+		left: ($multiply * 2em);
+		top: ($multiply * 1em);
+		width: ($multiply * 9em);
+		height: ($multiply * 13em);
+		background: $main_color;
+		border-radius: ($multiply * 20em) ($multiply * 20em) 0 0;
+		transform: rotate(-45deg);
+	}
+	&::after {
+		left: ($multiply * 5em);
+		top: ($multiply * 1em);
+		width: ($multiply * 9em);
+		height: ($multiply * 13em);
+		background: $main_color;
+		border-radius: ($multiply * 20em) ($multiply * 20em) 0 0;
+		transform: rotate(45deg);
+	}
+	&#{$namespace_icon_separator}#{$namespace_icon_heart_animate} {
+		animation: #{$namespace_icon_heart}_#{$namespace_icon_heart_animate} 5s infinite steps(10);
+	}
+}
+
+@keyframes #{$namespace_icon_heart}_#{$namespace_icon_heart_animate} {
+	0%   {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(0.75);
+	}
+	100% {
+		transform: scale(1);
+	}
+}

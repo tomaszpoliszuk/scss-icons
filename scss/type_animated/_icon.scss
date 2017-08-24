@@ -1,0 +1,90 @@
+$namespace_icons_prefix:						'icon' !default;
+
+$namespace_icon_separator:						'--' !default;
+
+$namespace_icon_download:						'download' !default;
+$namespace_icon_upload:							'upload' !default;
+$namespace_icon_download_animate:				'animate' !default;
+$namespace_icon_upload_animate:					'animate' !default;
+
+
+.#{$namespace_icons_prefix}-#{$namespace_icon_download},
+.#{$namespace_icons_prefix}-#{$namespace_icon_upload} {
+	margin: ($multiply * 10em) 0 0 0;
+	width: ($multiply * 12em);
+	height: ($multiply * 4em);
+	border: ($multiply * 2em) solid $main_color;
+	border-top: 0;
+	position: relative;
+	&::before {
+		top: ($multiply * -3em);
+		left: ($multiply * 2em);
+		width: 0;
+		height: 0;
+		border-top: ($multiply * 5em) solid $main_color;
+		border-left: ($multiply * 4em) solid $transparent;
+		border-right: ($multiply * 4em) solid $transparent;
+	}
+	&::after {
+		top: ($multiply * -10em);
+		left: ($multiply * 4em);
+		width: ($multiply * 4em);
+		height: ($multiply * 7em);
+		background: $main_color;
+	}
+}
+.#{$namespace_icons_prefix}-#{$namespace_icon_upload} {
+	&::before {
+		top: ($multiply * -10em);
+		left: ($multiply * 2em);
+		transform: rotate(180deg);
+	}
+	&::after {
+		top: ($multiply * -5em);
+		transform: rotate(180deg);
+	}
+}
+
+.#{$namespace_icons_prefix}-#{$namespace_icon_download} {
+	&#{$namespace_icon_separator}#{$namespace_icon_download_animate} {
+		&::before,
+		&::after {
+			animation: #{$namespace_icon_download}_#{$namespace_icon_download_animate} 2s infinite ease-in-out;
+		}
+	}
+}
+
+.#{$namespace_icons_prefix}-#{$namespace_icon_upload} {
+	&#{$namespace_icon_separator}#{$namespace_icon_upload_animate} {
+		&::before,
+		&::after {
+			animation: #{$namespace_icon_upload}_#{$namespace_icon_upload_animate} 2s infinite ease-in-out;
+		}
+	}
+}
+
+@keyframes #{$namespace_icon_download}_#{$namespace_icon_download_animate} {
+	0%   {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(($multiply * 4em));
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+@keyframes #{$namespace_icon_upload}_#{$namespace_icon_upload_animate} {
+	0%   {
+		transform: translateY(0px) rotate(180deg);
+	}
+	50% {
+		transform: translateY(($multiply * -4em)) rotate(180deg);
+	}
+	100% {
+		transform: translateY(0px) rotate(180deg);
+	}
+}
+
+

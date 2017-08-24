@@ -1,0 +1,92 @@
+$namespace_icons_prefix:						'icon' !default;
+
+$namespace_icon_separator:						'--' !default;
+
+$namespace_icon_battery:						'battery' !default;
+$namespace_icon_battery_min:					'min' !default;
+$namespace_icon_battery_half:					'half' !default;
+$namespace_icon_battery_max:					'max' !default;
+$namespace_icon_battery_animate:				'animate' !default;
+$namespace_icon_battery_animate_alt:			'animate_alt' !default;
+$namespace_icon_battery_active:					'active' !default;
+$namespace_icon_battery_inactive:				'inactive' !default;
+
+.#{$namespace_icons_prefix}-#{$namespace_icon_battery} {
+	margin: ($multiply * 3em) ($multiply * 1em) ($multiply * 3em) 0;
+	width: ($multiply * 11em);
+	height: ($multiply * 6em);
+	border: ($multiply * 2em) solid $main_color;
+	border-radius: ($multiply * 2em);
+	&::before,
+	&::after {
+		top: ($multiply * 1em);
+		height: ($multiply * 4em);
+		background: $main_color;
+	}
+	&::before {
+		left: ($multiply * 12em);
+		width: ($multiply * 2em);
+		border-radius: ($multiply * 2em);
+	}
+	&::after {
+		left: ($multiply * 1em);
+		width: 0;
+	}
+	&#{$namespace_icon_separator}#{$namespace_icon_battery_min} {
+		&::after {
+			width: ($multiply * 2em);
+		}
+	}
+	&#{$namespace_icon_separator}#{$namespace_icon_battery_half} {
+		&::after {
+			width: ($multiply * 5em);
+		}
+	}
+	&#{$namespace_icon_separator}#{$namespace_icon_battery_max} {
+		&::after {
+			width: ($multiply * 9em);
+		}
+	}
+	&#{$namespace_icon_separator}#{$namespace_icon_battery_animate} {
+		&::after {
+			width: 0;
+			animation: #{$namespace_icon_battery}_#{$namespace_icon_battery_animate} 5s infinite steps(10);
+		}
+	}
+	&#{$namespace_icon_separator}#{$namespace_icon_battery_animate_alt} {
+		&::after {
+			width: ($multiply * 9em);
+			animation: #{$namespace_icon_battery}_#{$namespace_icon_battery_animate_alt} 5s infinite steps(10);
+		}
+	}
+	&#{$namespace_icon_separator}#{$namespace_icon_battery_active} {
+		&::after {
+			background: $good_color;
+		}
+	}
+	&#{$namespace_icon_separator}#{$namespace_icon_battery_inactive} {
+		&::after {
+			background: $bad_color;
+		}
+	}
+}
+
+@keyframes #{$namespace_icon_battery}_#{$namespace_icon_battery_animate} {
+	0%   {
+		width: 0;
+	}
+	100% {
+		width: ($multiply * 9em);
+	}
+}
+
+@keyframes #{$namespace_icon_battery}_#{$namespace_icon_battery_animate_alt} {
+	0%   {
+		width: ($multiply * 9em);
+	}
+	100% {
+		width: 0;
+	}
+}
+
+

@@ -1,0 +1,28 @@
+.#{$namespace_icons_prefix}-table {
+	&::before {
+		top: ($multiply * 1em);
+		left: 0;
+		width: ($multiply * 14em);
+		height: ($multiply * 11em);
+		border: ($multiply * 1em) solid $main_color;
+		border-top: ($multiply * 2em) solid $main_color;
+		border-radius: ($multiply * 2em);
+		background: $transparent;
+	}
+	&::after {
+		top: ($multiply * 3em);
+		left: ($multiply * 1em);
+		width: ($multiply * 4em);
+		height: ($multiply * 3em);
+		background: $main_color;
+		box-shadow:
+				($multiply * 5em) 0 0 $main_color,
+				($multiply * 10em) 0 0 $main_color,
+				0 ($multiply * 4em) 0 $main_color,
+				($multiply * 5em) ($multiply * 4em) 0 $main_color,
+				($multiply * 10em) ($multiply * 4em) 0 $main_color,
+				0 ($multiply * 8em) 0 $main_color,
+				($multiply * 5em) ($multiply * 8em) 0 $main_color,
+				($multiply * 10em) ($multiply * 8em) 0 $main_color;
+	}
+}

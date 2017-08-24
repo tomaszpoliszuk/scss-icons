@@ -1,0 +1,26 @@
+.#{$namespace_icons_prefix}-list {
+	&::before {
+		top: ($multiply * 1em);
+		left: 0;
+		width: ($multiply * 2em);
+		height: ($multiply * 2em);
+		border-radius: ($multiply * 2em);
+		background: $main_color;
+		box-shadow:
+				0 ($multiply * 4em) 0 $main_color,
+				0 ($multiply * 8em) 0 $main_color,
+				0 ($multiply * 12em) 0 $main_color;
+	}
+	&::after {
+		top: ($multiply * 1em);
+		left: ($multiply * 3em);
+		width: ($multiply * 13em);
+		height: ($multiply * 2em);
+		border-radius: ($multiply * 2em);
+		background: $main_color;
+		box-shadow:
+				0 ($multiply * 4em) 0 $main_color,
+				0 ($multiply * 8em) 0 $main_color,
+				0 ($multiply * 12em) 0 $main_color;
+	}
+}

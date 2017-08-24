@@ -1,0 +1,17 @@
+.#{$namespace_icons_prefix}-ipod {
+	margin: 0 ($multiply * 3em);
+	width: ($multiply * 8em);
+	height: ($multiply * 7em);
+	border:  ($multiply * 1em) solid $main_color;
+	border-bottom: ($multiply * 8em) solid $main_color;
+	border-radius: ($multiply * 1em);
+	&::before {
+		top: ($multiply * 8em);
+		left: ($multiply * 1em);
+		width: ($multiply * 2em);
+		height: ($multiply * 2em);
+		border:  ($multiply * 2em) solid $secondary_color;
+		border-radius: ($multiply * 3em);
+		background: $main_color;
+	}
+}

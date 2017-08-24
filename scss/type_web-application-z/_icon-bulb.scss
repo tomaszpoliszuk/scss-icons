@@ -1,0 +1,34 @@
+.#{$namespace_icons_prefix}-bulb {
+	margin: 0 ($multiply * 3em) ($multiply * 6em) ($multiply * 3em);
+	width: ($multiply * 10em);
+	height: ($multiply * 10em);
+	background: $main_color;
+	border-radius: ($multiply * 5em);
+	&::before {
+		top: ($multiply * 9em);
+		left: ($multiply * 3em);
+		width: ($multiply * 4em);
+		height: ($multiply * 1em);
+		background: $main_color;
+		box-shadow:
+					0 0 0 $main_color,
+					0 ($multiply * 1em) 0 $main_color,
+					0 ($multiply * 0.15625em) 0 $main_color,
+					0 ($multiply * 0.234375em) 0 $main_color;
+	}
+	&:after {
+		top: ($multiply * 14em);
+		left: ($multiply * 4em);
+		width: ($multiply * 2em);
+		height: ($multiply * 1em);
+		background: $main_color;
+		border-radius: 0 0 ($multiply * 1em) ($multiply * 1em);
+	}
+	&-alt {
+		&::before {
+			box-shadow:
+			0 ($multiply * 1em) 0 $main_color,
+			0 ($multiply * 3em) 0 $main_color;
+		}
+	}
+}

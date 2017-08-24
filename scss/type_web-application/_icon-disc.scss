@@ -1,0 +1,22 @@
+.#{$namespace_icons_prefix}-disc {
+	width: ($multiply * 4em);
+	height: ($multiply * 4em);
+	border: ($multiply * 6em) solid $main_color;
+	border-radius: ($multiply * 8em);
+	&-alt {
+		&::before {
+			top: ($multiply * 3em);
+			left: ($multiply * 3em);
+			width: ($multiply * 4em);
+			height: ($multiply * 4em);
+			border: ($multiply * 1em) solid $main_color;
+			border-radius: ($multiply * 8em);
+		}
+		&::after {
+			width: ($multiply * 6em);
+			height: ($multiply * 6em);
+			border: ($multiply * 3em) solid $secondary_color;
+			border-radius: ($multiply * 8em);
+		}
+	}
+}

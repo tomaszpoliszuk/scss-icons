@@ -1,0 +1,10 @@
+.#{$namespace_icons_prefix}-rec {
+	&::before {
+		top: ($multiply * 3em);
+		left: ($multiply * 3em);
+		width: ($multiply * 10em);
+		height: ($multiply * 10em);
+		border-radius: ($multiply * 6em);
+		background: $main_color;
+	}
+}

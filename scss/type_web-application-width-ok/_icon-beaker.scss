@@ -1,0 +1,26 @@
+.#{$namespace_icons_prefix}-beaker {
+	margin: ($multiply * 6em) 0 0 0;
+	width: ($multiply * 6em);
+	height: 0;
+	border-left: ($multiply * 5em) solid $transparent;
+	border-right: ($multiply * 5em) solid $transparent;
+	border-bottom: ($multiply * 10em) solid $main_color;
+	border-radius: ($multiply * 2em);
+	&::before {
+		top: ($multiply * -6em);
+		left: 0;
+		width: ($multiply * 2em);
+		height: ($multiply * 8em);
+		border-left: ($multiply * 2em) solid $main_color;
+		border-right: ($multiply * 2em) solid $main_color;
+	}
+	&::after {
+		top: ($multiply * -6em);
+		left: ($multiply * -2em);
+		width: ($multiply * 2em);
+		height: ($multiply * 2em);
+		border-left: ($multiply * 4em) solid $main_color;
+		border-right: ($multiply * 4em) solid $main_color;
+		border-radius: ($multiply * 2em);
+	}
+}

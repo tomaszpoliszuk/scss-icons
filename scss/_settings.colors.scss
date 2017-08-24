@@ -1,0 +1,16 @@
+//:root {
+//  --main_color: #000;
+//}
+
+//$main_color:									var(--main_color);
+$main_color:									rgb(50,50,50);
+$main_color:									currentColor;
+
+
+$secondary_color:								rgb(255,255,255);
+
+$transparent:									rgba(255,255,255,0);
+
+$bad_color:										rgb(230,0,0);
+
+$good_color:									rgb(0,230,0);

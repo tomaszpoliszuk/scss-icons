@@ -1,0 +1,21 @@
+.#{$namespace_icons_prefix}-monitor {
+	margin: ($multiply * 2em) 0 ($multiply * 4em) 0;
+	width: ($multiply * 14em);
+	height: ($multiply * 8em);
+	border: ($multiply * 1em) solid $main_color;
+	border-radius: ($multiply * 2em);
+	&::before {
+		left: ($multiply * 5em);
+		top: ($multiply * 9em);
+		width: ($multiply * 4em);
+		height: ($multiply * 1em);
+		background: $main_color;
+	}
+	&::after {
+		left: ($multiply * 3em);
+		top: ($multiply * 10em);
+		width: ($multiply * 8em);
+		height: ($multiply * 1em);
+		background: $main_color;
+	}
+}

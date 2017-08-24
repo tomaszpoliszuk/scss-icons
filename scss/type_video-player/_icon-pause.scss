@@ -1,0 +1,16 @@
+.#{$namespace_icons_prefix}-pause {
+	&::before {
+		top: ($multiply * 3em);
+		left: ($multiply * 3em);
+		width: ($multiply * 4em);
+		height: ($multiply * 10em);
+		background: $main_color;
+	}
+	&::after {
+		top: ($multiply * 3em);
+		left: ($multiply * 9em);
+		width: ($multiply * 4em);
+		height: ($multiply * 10em);
+		background: $main_color;
+	}
+}

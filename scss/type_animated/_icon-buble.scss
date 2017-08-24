@@ -1,0 +1,66 @@
+$namespace_icons_prefix:						'icon' !default;
+
+$namespace_icon_separator:						'--' !default;
+
+$namespace_icon_buble:							'buble' !default;
+$namespace_icon_buble_animate:					'animate' !default;
+
+
+.#{$namespace_icons_prefix}-#{$namespace_icon_buble} {
+	margin: ($multiply * 1em) 0 ($multiply * 5em) 0;
+	width: ($multiply * 16em);
+	height: ($multiply * 10em);
+	border-radius: ($multiply * 3em);
+	background: $main_color;
+	&::before {
+		left: ($multiply * 8em);
+		top: ($multiply * 10em);
+		width: 0;
+		height: 0;
+		border-top: ($multiply * 4em) solid $main_color;
+		border-right: ($multiply * 4em) solid $transparent;
+	}
+	&::after {
+		left: ($multiply * 3em);
+		top: ($multiply * 4em);
+		width: ($multiply * 2em);
+		height: ($multiply * 2em);
+		border-radius: ($multiply * 2em);
+		background: $secondary_color;
+		box-shadow:
+		($multiply * 4em) 0 0 $secondary_color,
+		($multiply * 8em) 0 0 $secondary_color;
+	}
+	&#{$namespace_icon_separator}#{$namespace_icon_buble_animate} {
+		&::after {
+			animation: #{$namespace_icon_buble}_#{$namespace_icon_buble_animate} 5s infinite linear;
+		}
+	}
+}
+
+@keyframes #{$namespace_icon_buble}_#{$namespace_icon_buble_animate} {
+	0%   {
+		background: $main_color;
+		box-shadow:
+		($multiply * 4em) 0 0 $secondary_color,
+		($multiply * 8em) 0 0 $secondary_color;
+	}
+	33.33% {
+		background: $secondary_color;
+		box-shadow:
+		($multiply * 4em) 0 0 $main_color,
+		($multiply * 8em) 0 0 $secondary_color;
+	}
+	66.66% {
+		background: $secondary_color;
+		box-shadow:
+		($multiply * 4em) 0 0 $secondary_color,
+		($multiply * 8em) 0 0 $main_color;
+	}
+	100% {
+		background: $main_color;
+		box-shadow:
+		($multiply * 4em) 0 0 $secondary_color,
+		($multiply * 8em) 0 0 $secondary_color;
+	}
+}

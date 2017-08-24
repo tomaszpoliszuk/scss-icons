@@ -1,0 +1,19 @@
+.#{$namespace_icons_prefix}-columns {
+	&::before {
+		top: ($multiply * 1em);
+		left: 0;
+		width: ($multiply * 12em);
+		height: ($multiply * 9em);
+		border: ($multiply * 2em) solid $main_color;
+		border-top: ($multiply * 3em) solid $main_color;
+		border-radius: ($multiply * 2em);
+		background: $transparent;
+	}
+	&::after {
+		top: ($multiply * 1em);
+		left: ($multiply * 7em);
+		width: ($multiply * 2em);
+		height: ($multiply * 14em);
+		background: $main_color;
+	}
+}

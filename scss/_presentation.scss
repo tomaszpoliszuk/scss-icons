@@ -1,0 +1,52 @@
+body {
+	background: #b4b4b4;
+	background: linear-gradient(to right,#dcdcdc,#b4b4b4);
+//	font-size: 32px;
+	font-size: 16px;
+}
+
+
+//	*{
+//		&,
+//		&::before,
+//		&::after{
+//			box-sizing: border-box;
+//		}
+//	}
+
+.iconpack {
+	position: relative;
+	max-width: ($multiply * 5120em);
+	margin: 0 auto;
+	background-size: ($multiply * 20em) ($multiply * 20em);
+	background-position: ($multiply * -4em) ($multiply * -4em);
+//	background-image:
+//		linear-gradient(	rgba(0,0,0,.5) 	4em, transparent 4em),
+//		linear-gradient(0, 	rgba(0,0,0,.5)	4em, transparent 4em);
+}
+
+[class^="#{$namespace_icons_prefix}-"],
+[class*=" #{$namespace_icons_prefix}-"] {
+//	font-size: ($multiply * 16em);
+//	font-size: 16em;
+	width: ($multiply * 16em);
+	height: ($multiply * 16em);
+	position: relative;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	display: inline-block;
+	background: $transparent;
+	transform: scale(1);
+//	pointer-events: none;
+//	outline: 2px solid rgb(255,0,0);
+	&:hover {
+//		transform: scale(2);
+	}
+	&::before,
+	&::after {
+		content: '';
+		position: absolute;
+		background: $transparent;
+	}
+}

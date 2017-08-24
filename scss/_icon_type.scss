@@ -1,0 +1,19 @@
+[class*="-circle"] {
+	border-radius: ($multiply * 8em);
+	background: $main_color;
+}
+
+[class*="-box"] {
+	background: $main_color;
+}
+
+[class*="-empty"] {
+	width:  ($multiply * 12em);
+	height: ($multiply * 12em);
+	border: ($multiply * 2em) solid $main_color;
+	background: $transparent;
+}
+
+[class*="-rounded"] {
+	border-radius: ($multiply * 2em);
+}

@@ -1,0 +1,22 @@
+.#{$namespace_icons_prefix}-imac {
+	margin: ($multiply * 1em) 0 ($multiply * 3em) 0;
+	width: ($multiply * 14em);
+	height: ($multiply * 8em);
+	border: ($multiply * 1em) solid $main_color;
+	border-bottom: ($multiply * 3em) solid $main_color;
+	border-radius: ($multiply * 2em);
+	&::before {
+		left: ($multiply * 5em);
+		top: ($multiply * 11em);
+		width: ($multiply * 4em);
+		height: ($multiply * 1em);
+		background: $main_color;
+	}
+	&::after {
+		left: ($multiply * 3em);
+		top: ($multiply * 12em);
+		width: ($multiply * 8em);
+		height: ($multiply * 1em);
+		background: $main_color;
+	}
+}
